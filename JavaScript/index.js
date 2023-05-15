@@ -495,3 +495,42 @@
 // console.log(cards[7].value + cards[7].suit);
 
 // cards.forEach((card) => console.log(`${card.value} ${card.suit}`));
+
+// Error
+// try {
+//   let x = window.prompt("Enter a #");
+//   x = Number(x);
+
+//   if (isNaN(x)) throw "That wasn't a number!";
+//   if (x == "") throw "That was empty!";
+
+//   console.log(`${x} is a number`);
+// } catch (error) {
+//   console.log(error);
+// }
+
+// setTimeoout()
+
+// let item = "cryptocurrency";
+// let price = 420.96;
+
+// let timer = setTimeout(firstMessage, 3000);
+// let timer2 = setTimeout(secondMessage, 6000);
+// let timer3 = setTimeout(thirdMessage, 9000);
+
+// function firstMessage() {
+//   alert(`Buy this ${item} for ${price}$!`);
+// }
+// function secondMessage() {
+//   alert(`This is not a scam`);
+// }
+// function thirdMessage() {
+//   alert(`DO it`);
+// }
+
+// document.querySelector("#myButton").onclick = function () {
+//   clearTimeout(timer);
+//   clearInterval(timer2);
+//   clearTimeout(timer3);
+//   alert(`Thanks for being an idiot!`);
+// };
