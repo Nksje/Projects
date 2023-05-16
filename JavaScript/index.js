@@ -534,3 +534,20 @@
 //   clearTimeout(timer3);
 //   alert(`Thanks for being an idiot!`);
 // };
+
+// setInterval()
+
+let count = 0;
+
+let max = window.prompt("Count up to what #?");
+max = Number(max);
+
+const myTimer = setInterval(countUp, 1000);
+
+function countUp() {
+  count++;
+  console.log(count);
+  if (count >= max) {
+    clearInterval(myTimer);
+  }
+}
