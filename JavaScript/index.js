@@ -554,7 +554,6 @@
 
 // 24. Date object
 
-let date = new Date();
+// let date = new Date();
 
-date = date.toLocaleString();
-console.log(date);
+// date = date.toLocaleString();
