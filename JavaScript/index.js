@@ -496,7 +496,7 @@
 
 // cards.forEach((card) => console.log(`${card.value} ${card.suit}`));
 
-// Error
+// 21. Error
 // try {
 //   let x = window.prompt("Enter a #");
 //   x = Number(x);
@@ -509,7 +509,7 @@
 //   console.log(error);
 // }
 
-// setTimeoout()
+// 22. setTimeoout()
 
 // let item = "cryptocurrency";
 // let price = 420.96;
@@ -535,19 +535,26 @@
 //   alert(`Thanks for being an idiot!`);
 // };
 
-// setInterval()
+// 23. setInterval()
 
-let count = 0;
+// let count = 0;
 
-let max = window.prompt("Count up to what #?");
-max = Number(max);
+// let max = window.prompt("Count up to what #?");
+// max = Number(max);
 
-const myTimer = setInterval(countUp, 1000);
+// const myTimer = setInterval(countUp, 1000);
 
-function countUp() {
-  count++;
-  console.log(count);
-  if (count >= max) {
-    clearInterval(myTimer);
-  }
-}
+// function countUp() {
+//   count++;
+//   console.log(count);
+//   if (count >= max) {
+//     clearInterval(myTimer);
+//   }
+// }
+
+// 24. Date object
+
+let date = new Date();
+
+date = date.toLocaleString();
+console.log(date);
