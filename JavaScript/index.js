@@ -554,28 +554,43 @@
 
 // 24. Date object
 
-const myLabel = document.querySelector("#myLabel");
+// const myLabel = document.querySelector("#myLabel");
 
-update();
-setInterval(update, 1000);
+// update();
+// setInterval(update, 1000);
 
-function update() {
-  let date = new Date();
-  myLabel.innerHTML = formatTime(date);
+// function update() {
+//   let date = new Date();
+//   myLabel.innerHTML = formatTime(date);
 
-  function formatTime(date) {
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+//   function formatTime(date) {
+//     let hours = date.getHours();
+//     let minutes = date.getMinutes();
+//     let seconds = date.getSeconds();
 
-    if (hours < 10) {
-      hours = "0" + hours;
-    } else if (minutes < 10) {
-      minutes = "0" + minutes;
-    } else if (seconds < 10) {
-      seconds = "0" + seconds;
-    }
+//     if (hours < 10) {
+//       hours = "0" + hours;
+//     } else if (minutes < 10) {
+//       minutes = "0" + minutes;
+//     } else if (seconds < 10) {
+//       seconds = "0" + seconds;
+//     }
 
-    return `${hours}:${minutes}:${seconds}`;
-  }
-}
+//     return `${hours}:${minutes}:${seconds}`;
+//   }
+// }
+
+// 25. Synchronous and Asynchronous code
+
+// console.log("START");
+// setTimeout(() => console.log("This is asynchronous"), 5000);
+// console.log("END");
+
+// 26. console.time()
+
+// // start
+// console.time("Response Time");
+
+// alert("Click the Ok button");
+// // end
+// console.timeEnd("Response Time");
