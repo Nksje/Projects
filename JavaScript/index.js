@@ -554,7 +554,7 @@
 
 // 24. Date object
 
-const myLabel = document.getElementById("myLabel");
+const myLabel = document.querySelector("#myLabel");
 
 update();
 setInterval(update, 1000);
