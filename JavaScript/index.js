@@ -579,12 +579,7 @@ function update() {
   }
 
   function formatZeroes(time) {
-    let times;
-    times = time.toString();
-    if (time.lenght < 2) {
-      return "0" + times;
-    } else {
-      return times;
-    }
+    time = time.toString();
+    return time.lenght > 2 ? "0" + time : time;
   }
 }
