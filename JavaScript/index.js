@@ -554,37 +554,32 @@
 
 // 24. Date object
 
-const label = document.querySelector("#timeClock");
+const myLabel = document.getElementById("myLabel");
 
 update();
 setInterval(update, 1000);
 
 function update() {
   let date = new Date();
-  label.innerHTML = formatTime(date);
+  myLabel.innerHTML = formatTime(date);
 
   function formatTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
-    let amOrPm = hours >= 12 ? "pm" : "am";
 
-    hours = hours % 12 || 12;
-
-    hours = formatZeroes(hours);
-    minutes = formatZeroes(minutes);
-    seconds = formatZeroes(seconds);
-
-    return `${hours}:${minutes}:${seconds} ${amOrPm}`;
-  }
-
-  function formatZeroes(time) {
-    let times;
-    times = time.toString();
-    if (time.lenght < 2) {
-      return "0" + times;
+    if (seconds < 10) {
+      seconds = "0" + seconds;
     } else {
-      return times;
+      seconds = seconds;
     }
+    if (hours < 10) {
+      hours = "0" + hours;
+    }
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+
+    return `${hours}:${minutes}:${seconds}`;
   }
 }
